@@ -161,6 +161,7 @@
    max-height: 707px;
    margin: 0 auto;
    clip-path: circle(55% at center center);
+   padding-top: 33px;
 }
 .promo__link {
    display: block;
@@ -243,7 +244,7 @@
    content: '';
    display: block;
    position: absolute;
-   background-image: url(../icon/arrow.svg);
+   background-image: url(../img/icon/arrow.svg);
    background-repeat: no-repeat;
    width: 16px;
    height: 16px;
