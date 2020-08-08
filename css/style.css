@@ -41,8 +41,25 @@
 }
 
 .main-header__navigation {
+   position: relative;
    display: flex;
    margin-bottom: 47px;
+}
+
+.main-header__toggle {
+   display: none;
+   position: absolute;
+   width: 22px;
+   height: 22px;
+   background-color: #ffffff;
+   top: 60px;
+   left: 470px;
+}
+
+.main-header__toggle > svg {
+   width: inherit;
+   height: inherit;
+   flex-shrink: 0;
 }
 
 .main-header__menu {
@@ -51,20 +68,28 @@
 
 @media (max-width: 992px) {
    .main-header__menu {
-      display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
       align-content: center;
-   }
-   .main-header__item {
-      margin-right: 25px;
-      margin-bottom: 10px;
    }
 }
 
 .main-header__item {
    margin-right: 49px;
    text-align: center;
+}
+
+@media (max-width: 1200px) {
+   .main-header__item {
+      margin-right: 25px;
+   }
+}
+
+@media (max-width: 992px) {
+   .main-header__item {
+      margin-right: 40px;
+      margin-bottom: 10px;
+   }
 }
 
 .main-header__link {
@@ -93,6 +118,13 @@
    margin: 0 auto;
    margin-bottom: 44px;
    max-width: 100%;
+}
+
+@media (max-width: 992px) {
+   .headline {
+      max-width: 100%;
+      height: auto;
+   }
 }
 
 .headline::before {
@@ -172,7 +204,6 @@
 
 @media (max-width: 992px) {
    .reviews__list {
-      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -219,6 +250,12 @@
    font-size: 14px;
    line-height: 150%;
    color: #000000;
+}
+
+@media (max-width: 992px) {
+   .reviews__description {
+      padding-bottom: 10px;
+   }
 }
 
    /* promo */
@@ -353,7 +390,7 @@
 }
 
 .main-footer__navigation {
-   display: block;
+   display: flex;
    padding-bottom: 42px;
 }
 
@@ -362,9 +399,40 @@
    border-bottom: 1px solid #ffffff;
 }
 
+@media (max-width: 992px) {
+   .main-footer__menu {
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+   }
+}
+
 .main-footer__item {
    margin-right: 48px;
    padding-bottom: 46px;
+}
+
+@media (max-width: 1200px) {
+   .main-footer__item {
+      justify-content: center;
+      align-content: center;
+      margin-right: 30px;
+   }
+}
+
+@media (max-width: 992px) {
+   .main-footer__item {
+     margin-right: 23px;
+   }
+}
+
+@media (max-width: 768px) {
+   .main-footer__item {
+      justify-content: center;
+      align-content: center;
+      margin-right: 30px;
+      padding-bottom: 15px;
+   }
 }
 
 .main-footer__link {
