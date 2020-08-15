@@ -152,34 +152,28 @@
    /* headline */
 
 .headline {
-   position: relative;
    background-image: url(../img/underwater-hotel.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   padding: 133px 0px 48px 0px;
-   margin: 0 auto;
+   padding: 46px 0px 48px 0px;
    max-width: 100%;
 }
 
 .headline::before {
    content: '';
-   position: absolute;
-   top: 46px;
-   left: 48.4%;
+   display: block;
    background-image: url(../img/headline-logo.svg);
    background-repeat: no-repeat;
    background-position: center;
    width: 55px;
    height: 55px;
+   margin: 0 auto 32px;
 }
 
 @media (max-width: 768px) {
    .headline {
       padding-bottom: 50px;
-   }
-   .headline::before {
-      left: 45.5%;
    }
 }
 
@@ -281,6 +275,7 @@
    font-size: calc(17px + 6 * ((100vw - 320px) / (1440 - 320)));
    line-height: 31px;
    color: #000000;
+   margin: 0 auto;
 }
 
 .reviews__subtitle:hover {
